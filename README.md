@@ -3,7 +3,7 @@
 A New Method to Compute Transition Probabilities in Multi-Stable Stochastic Dynamical Systems: Application to the Wind-driven Ocean Circulation, submitted to JAMES (!!! DATE !!!)
 
 These directories contain Python scripts for generating the DO solutions for the Burgers Equation and wind-driven ocean circulation (QG).
-Run BE_main.py or QG_main.py, one may change the input variables within these files.
+Run BE_main.py or QG_main.py to initiate the DO procedure.
 
 The DO basis needs to be sorted (post-processing) when running the QG configuration:
 
