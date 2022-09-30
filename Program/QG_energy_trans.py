@@ -72,7 +72,7 @@ ny          = 64 #Number of meridional dimensions
 nV          = 4  #Number of DO modes
 Re	        = 40
 delta_t	    = 0.0005
-stoch_amp   = 1
+stoch_amp   = 15
 
 #-----------------------------------------------------------------------------
 
@@ -216,7 +216,7 @@ for time_i in range(len(time)):
 	for V_i in range(nV):
 		E_diss[time_i, V_i] = -(Var[V_i, V_i]/Re)*dx*dy* np.sum(du_dx_basis[V_i]**2.0+du_dy_basis[V_i]**2.0+dv_dx_basis[V_i]**2.0+dv_dy_basis[V_i]**2.0)
 
-		E_mean_DO[time_i, V_i] = -Var[V_i, V_i]*dx*dy*np.sum(du_dx_mean * u_basis[V_i]**2.0+dv_dy_mean * v_basis[V_i]**2.0+(du_dy_mean+dv_dx_mean)*u_basis[V_i]*v_basis[V_i])
+		E_mean_DO[time_i, V_i] = Var[V_i, V_i]*dx*dy*np.sum(du_dx_mean * u_basis[V_i]**2.0+dv_dy_mean * v_basis[V_i]**2.0+(du_dy_mean+dv_dx_mean)*u_basis[V_i]*v_basis[V_i])
 
 		#Start with empty array for Einsten notation
 		E_modes	= 0.0
