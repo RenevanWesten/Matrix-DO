@@ -1,6 +1,6 @@
 # Matrix-DO
 
-A New Method to Compute Transition Probabilities in Multi-Stable Stochastic Dynamical Systems: Application to the Wind-driven Ocean Circulation, submitted to JAMES (12 October 2022)
+A New Method to Compute Transition Probabilities in Multi-Stable Stochastic Dynamical Systems: Application to the Wind-driven Ocean Circulation, JAMES.
 
 These directories contain Python scripts for generating the DO solutions for the Burgers Equation and wind-driven ocean circulation (QG).
 Run BE_main.py or QG_main.py to initiate the DO procedure.
